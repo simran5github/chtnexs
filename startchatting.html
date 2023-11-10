@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatNexus</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <script defer src="https://nexusnode.onrender.com/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <img id="icon" src="chat.png" alt="image">
+            <li id="name"><b>ChatNexus</b></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="col1" class="mobile">
+            <h4 id="pd" style="margin-top: 2px;">Participants details</h4>
+        </div>
+        <div id="col2">
+            <div class="container">
+                <!-- <div class="message right">Harry: how r u?</div>
+                <div class="message left">Rohan: I am fine</div>  -->
+            </div>
+            <div class="send">
+                <form action="#" id="send-container">
+                    <input type="text" name="messageInp" id="messageInp">
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

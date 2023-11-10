@@ -1,0 +1,129 @@
+body{
+    height: 100%;
+    background-image: linear-gradient(rgb(244, 136, 233), rgb(132, 4, 192),rgb(245, 24, 24)); 
+    background-attachment: fixed;
+}
+.container{
+    width: 70vw;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 80px;
+    height: 60vh;
+    padding: 25px;
+    overflow-y: scroll;
+    margin-bottom: 23px;
+    margin-left: 5px;
+}
+.message{
+    background-image: linear-gradient(rgb(118, 85, 248),rgb(220, 69, 244));
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    transition: all 0.1s;
+}
+.message:hover{
+    transform: scale(1.2);
+}
+.tim{
+    /* font-weight: normal; */
+    color: rgb(41, 40, 40);
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+#send-container{
+    margin: auto;
+    max-width: 1050px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 34px;
+    font-size: 22px;
+    background-image: linear-gradient(rgb(118, 85, 248),rgb(220, 69, 244));
+    padding: 0px 15px;
+}
+.btn{
+    margin: 0 5px;
+    width: 12%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 38px;
+    background-image: linear-gradient(rgb(118, 85, 248),rgb(220, 69, 244));
+    transition: all 0.1s;
+}
+.btn:hover{
+    background-image: linear-gradient(rgb(70, 24, 250),rgb(69, 183, 244));
+    transform: scale(1.2);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#name{
+    color: rgb(99, 3, 3);
+    font-size: 40px;
+    float: left;
+    margin-top: 15px;
+}
+#icon{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+#col1{
+    /* margin-right: 5px; */
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 15vw;
+    height: 65vh;
+    font-size: 25px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+#col2{
+    padding: 0px;
+    margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+    #col1{
+        font-size: 18px;
+    }
+    .container{
+        width: 65vw;
+        margin-top: 65px;
+    }
+    #col2{
+        margin: auto;
+    }
+    .message{
+        font-size: 15px;
+        width: 50%;
+        height: 30px;
+    }
+    #messageInp{
+        font-size: 15px;
+    }
+}
